@@ -25,11 +25,24 @@
                     <div class="form-group">
                     <label for="email">Escribe tu email</label>
                     <input type="email" class="form-control" name="email" placeholder="" value="{{ $user->email }}" required>
-                    <br>    
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Escribe tu nueva contraseña</label>
+                        <input type="password" class="form-control" name="password" placeholder=""  required>
+                        </div>
+                    <div class="form-group">
+                        <label for="area">Ingrese el area</label>
+                        <input type="text" class="form-control" name="area" placeholder="" value="{{ $user->area }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Escribe tu email</label>
+                        <input type="text" class="form-control" name="position" placeholder="" value="{{ $user->position }}" required>
+                        </div>
+                    <br>  
                     <button type="submit" class="btn btn-primary"> Actualizar</button> <button type="reset" class="btn btn-danger">Cancelar</button>
-                </form>
-                </div>
+                        
                 
+                 </form>
             </div>
             
         </div>

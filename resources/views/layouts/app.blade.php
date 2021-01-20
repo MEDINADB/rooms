@@ -14,7 +14,9 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="dist/js/adminlte.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/stacktable.js"></script>
+    <link href="css/stacktable.css" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
 
@@ -210,7 +212,11 @@
                                     </p>
                                 </a>
                             </li>
-
+                            <li class="nav-item">
+                                <a href="{{(url('accounts'))}}" class="{{ Request::path() === '/accounts' ? 'nav-link active' : 'nav-link' }}">
+                                    <i class="fas fa-user"></i> <p>Cuentas</p>
+                                </a>
+                            </li>
                             <li class="nav-item has-treeview">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon far fa-sticky-note"></i>

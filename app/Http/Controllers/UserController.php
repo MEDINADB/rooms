@@ -50,11 +50,14 @@ class UserController extends Controller
             'email' => 'required',
             'password' => 'required',
         ];
+        
         $this->validate($request,$rules,$messages);
         $users = new User();
         $users ->name = request('name');
         $users ->email = request('email');
-        $users ->password = request('password');
+        $users ->area = request('area');
+        $users ->position = request('position');
+        $users ->password = bcrypt(request('password'));
         $users->save();
 
         return redirect('/users');
@@ -93,7 +96,9 @@ class UserController extends Controller
 
         $users ->name = $request-> get('name');
         $users ->email = $request-> get('email');
-        //$users ->password = request('password');
+        $users ->area = $request-> get('area');
+        $users ->position = $request-> get('position');
+        $users ->password = bcrypt(request('password'));
         $users->save();
 
         return redirect('/users')->with('success','El usuario fue actualizado correctamente');

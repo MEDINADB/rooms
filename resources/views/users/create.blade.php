@@ -22,11 +22,22 @@
                         <label for="name" >Nombres</label>
                         <input type="text" name="name" placeholder="Ingresa tu nombre"class="form-control" >
                     </div>
+                    
                     <div class="form-group">
                     <label for="email">Escribe tu email</label>
                     <input type="email" class="form-control" name="email" placeholder="Ingresa tu correo" >
-                    
                     </div>
+
+                    <div class="form-group">
+                        <label for="area">Area: </label>
+                        <input type="area" class="form-control" name="area" placeholder="Ingresa tu correo" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="position">Posicion:</label>
+                            <input type="position" class="form-control" name="position" placeholder="Ingresa tu correo" >
+                            </div>
+
                     <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" >
